@@ -3,8 +3,8 @@ const mongoose = require('mongoose');
 const SitioSchema = new mongoose.Schema({
   nombre: { type: String, required: true },
   descripcion: { type: String },
-  ciudad: { type: mongoose.Schema.Types.ObjectId, ref: 'Ciudad', required: true },
-  pais: { type: mongoose.Schema.Types.ObjectId, ref: 'Pais', required: true },
+  ciudad: { type: String },
+  pais: { type: String },
   foto: { type: String } // URL
 });
 
